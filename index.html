@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Carousel example</title>
+    <style>
+        * {            
+            -moz-box-sizing:border-box;
+            -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+        }
+        .slider {
+            overflow:hidden;
+            white-space:nowrap;
+            position:relative;
+            width: 800px;
+            height: 600px;
+            border: 1px solid grey;
+        }
+        .slider > div {
+            white-space:normal;
+            display: inline-block;
+            width:100%;
+            animation: slider 20s ease-in infinite;
+               
+        }
+        img {
+             width:800px;
+             height: 600px;
+        }
+        @keyframes slider {
+            0% { transform: translateX(0px); }
+            20% { transform: translateX(0px); }
+            25% { transform: translateX(-800px); }
+            45% { transform: translateX(-800px); }            
+            50% { transform: translateX(-1600px); }
+            70% { transform: translateX(-1600px); }    
+            75% { transform: translateX(-2400px); }            
+            100% { transform: translateX(-2400px); }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="content"><img src="resources/img1.jpg" /></div>
+        <div class="content"><img src="resources/img2.jpg" /></div>
+        <div class="content"><img src="resources/img3.jpg" /></div>
+        <div class="content"><img src="resources/img4.jpg" /></div>
+    </div>
+</body>
+</html>
